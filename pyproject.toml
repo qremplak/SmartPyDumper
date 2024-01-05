@@ -1,6 +1,6 @@
 [project]
 name = "SmartPyDumper"
-version = "1.0.0"
+version = "0.1.0"
 authors = [
   { name="Quentin REMPLAKOWSKI", email="q.rempla@gmail.com" },
 ]
@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["pydumper", "pydumper.*"]
+include = ["SmartPyDumper", "SmartPyDumper.*"]
 namespaces = false
 
 [project.urls]
-Homepage = "https://github.com/qremplak/pydumper"
-Issues = "https://github.com/qremplak/pydumper/issues"
+Homepage = "https://github.com/qremplak/SmartPyDumper"
+Issues = "https://github.com/qremplak/SmartPyDumper/issues"
