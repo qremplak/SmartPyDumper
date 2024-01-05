@@ -1,0 +1,37 @@
+[project]
+name = "SmartPyDumper"
+version = "1.0.0"
+authors = [
+  { name="Quentin REMPLAKOWSKI", email="q.rempla@gmail.com" },
+]
+description = "Smart Serializer that can serialize and de-serialize any json-like data that can contains any combination of Frame-like Data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers=[
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    "Topic :: Scientific/Engineering",
+    'License :: OSI Approved :: BSD License',  
+    'Operating System :: OS Independent',
+    "Programming Language :: Python :: 3",
+    'Programming Language :: Python :: 3.10',
+]
+
+dependencies = [
+  "setuptools>=61.0",
+  "deepdiff>=6.7.1",
+  "lxml>=5.0.0",
+  "aiohttp>=3.9.1",
+  "dill>=0.3.0",
+  "duckdb>=0.7",
+  "polars[all]>=0.16.1",
+  "pyarrow>=12.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["pydumper", "pydumper.*"]
+namespaces = false
+
+[project.urls]
+Homepage = "https://github.com/qremplak/pydumper"
+Issues = "https://github.com/qremplak/pydumper/issues"
